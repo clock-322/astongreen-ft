@@ -1,6 +1,7 @@
 import { clsx } from "../../../../utils/utils";
 import Error from "../Error/Error";
 import Label from "../Label/Label";
+import "./Checkbox.scss";
 
 const Checkbox = ({ name, error, className, label, ...rest }) => {
     return (

@@ -12,6 +12,7 @@ const Header = ({ show, setShow }) => {
     const { pathname } = useLocation();
     const title = {
         [ROUTES.DASHBOARD]: "Dashboard",
+        [ROUTES.ROLE_MANAGEMENT]: "Role Management",
     }
     return (
         <header className="header">

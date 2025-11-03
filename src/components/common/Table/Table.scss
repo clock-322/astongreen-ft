@@ -1,0 +1,115 @@
+.custom_table {
+    border: 1px solid var(--tableborder);
+    border-radius: 2rem;
+
+    @media (max-width: 991px) {
+        border-radius: 1.6rem;
+    }
+
+    .table-responsive {
+        &::-webkit-scrollbar {
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+    }
+
+    table {
+        white-space: nowrap;
+
+        thead {
+            th {
+                background-color: var(--tableheadbg);
+                border-bottom: 1px solid var(--tableheadborder);
+                padding: 1.8rem 3rem;
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 100%;
+
+                @media (max-width: 991px) {
+                    padding: 1.2rem 1.8rem;
+                }
+
+                &:first-child {
+                    border-top-left-radius: 2rem;
+
+                    @media (max-width: 991px) {
+                        border-top-left-radius: 1.6rem;
+                    }
+                }
+
+                &:last-child {
+                    border-top-right-radius: 2rem;
+
+                    @media (max-width: 991px) {
+                        border-top-right-radius: 1.6rem;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                &:last-child {
+                    td {
+
+                        &:first-child {
+                            border-bottom-left-radius: 2rem;
+
+                            @media (max-width: 991px) {
+                                border-bottom-left-radius: 1.6rem;
+                            }
+                        }
+
+                        &:last-child {
+                            border-bottom-right-radius: 2rem;
+
+                            @media (max-width: 991px) {
+                                border-bottom-right-radius: 1.6rem;
+                            }
+                        }
+                    }
+                }
+
+                &:not(:last-child) {
+                    td {
+                        border-bottom: 1px solid var(--tabletdborder);
+                    }
+                }
+
+                td {
+                    border: none;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: var(--secondarytxt);
+                    padding: 2.5rem 3rem;
+
+                    @media (max-width: 991px) {
+                        padding: 1.6rem 1.8rem;
+                        font-size: 1.4rem;
+                    }
+
+                    .no_record_found {
+                        text-align: center;
+                        padding: 1.6rem;
+
+                        svg {
+                            width: 4rem;
+                            height: 4rem;
+                            color: var(--lighttxt);
+                        }
+
+                        h3 {
+                            font-size: 1.4rem;
+                            color: var(--lighttxt);
+                            margin-top: 0.8rem;
+
+                            @media (max-width: 991px) {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

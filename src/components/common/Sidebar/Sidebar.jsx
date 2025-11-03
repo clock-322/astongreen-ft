@@ -19,7 +19,7 @@ const Sidebar = ({ show, setShow }) => {
         { name: "Project Management", icon: <ProjectManagementIcon />, to: "", },
         { name: "Token Management", icon: <TokenManagementIcon />, to: "", },
         { name: "User Management", icon: <UserMangementIcon />, to: "", },
-        { name: "Role Management", icon: <RoleManagementIcon />, to: "", },
+        { name: "Role Management", icon: <RoleManagementIcon />, to: ROUTES.ROLE_MANAGEMENT, },
         {
             name: "Review Requests", icon: <ReviewRequests />,
             list: [
