@@ -1,0 +1,16 @@
+.custom_label {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 100%;
+    color: var(--labeltxt);
+    margin-bottom: 1rem;
+
+    @media (max-width: 1479px) {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    span {
+        color: var(--danger);
+    }
+}

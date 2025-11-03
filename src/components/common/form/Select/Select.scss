@@ -1,0 +1,80 @@
+.custom_select {
+    .select_in {
+        .select__control {
+            background-color: var(--selectbg);
+            box-shadow: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--secondarytxt);
+            height: 5rem;
+            padding: 0 2.4rem;
+            border-radius: 1.6rem;
+
+            .select__value-container {
+                padding: 0;
+                margin: 0;
+
+                .select__single-value {
+                    color: var(--secondarytxt);
+                    margin: 0
+                }
+
+                .select__placeholder {
+                    color: var(--selectplaceholder);
+                    margin: 0;
+                }
+            }
+
+            .select__indicators {
+                .select__indicator-separator {
+                    display: none;
+                }
+
+                .select__indicator {
+                    background-image: url('data:image/svg+xml,<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.77834 6.63054L0.426344 1.27654C0.370466 1.22079 0.326116 1.15459 0.295825 1.0817C0.265534 1.00881 0.249896 0.930676 0.249804 0.851746C0.249711 0.772816 0.265165 0.694643 0.295284 0.621685C0.325403 0.548728 0.369597 0.482418 0.425344 0.426541C0.48109 0.370663 0.547296 0.326312 0.620182 0.296021C0.693069 0.26573 0.771207 0.250093 0.850137 0.25C0.929067 0.249908 1.00724 0.26536 1.0802 0.295479C1.15316 0.325599 1.21947 0.369795 1.27534 0.425541L6.20234 5.35454L11.1303 0.426541C11.2432 0.313824 11.3962 0.250551 11.5557 0.250645C11.7152 0.250739 11.8681 0.314191 11.9808 0.427041C12.0936 0.53989 12.1568 0.692895 12.1567 0.852395C12.1566 1.01189 12.0932 1.16482 11.9803 1.27754L6.62834 6.63654C6.51409 6.74702 6.36105 6.80828 6.20212 6.80716C6.04318 6.80604 5.89103 6.74262 5.77834 6.63054Z" fill="%230D2E1E" stroke="%230D2E1E" stroke-width="0.5"/></svg>');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 1.1rem;
+                    height: 0.9rem;
+
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .select__menu {
+            background-color: var(--selectdropdown);
+            padding: 1.8rem 2.4rem;
+            border-radius: 1.6rem;
+            border: none;
+            box-shadow: none;
+
+            .select__option {
+                padding: 0;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: var(--secondarytxt);
+                transition: 300ms ease-in-out;
+                background-color: transparent;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--lighttxt);
+                }
+
+                &.select__option--is-selected {
+                    color: var(--selectactiveitem);
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}

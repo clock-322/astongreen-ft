@@ -1,0 +1,75 @@
+.custom_btn {
+    height: 5rem;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0 2.4rem;
+    transition: 250ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--btntxt);
+    background: var(--basegradient);
+    border-radius: 1.6rem;
+    position: relative;
+    z-index: 1;
+    overflow: clip;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.2);
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 0.25s ease-in-out;
+        pointer-events: none;
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: right center;
+    }
+
+
+    @media (max-width: 1479px) {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        height: 4.4rem;
+        padding: 0 2rem;
+    }
+
+    .custom_spinner {
+        display: inline-flex;
+
+        .lds-spinner {
+            color: inherit;
+        }
+    }
+
+    &.secondary_btn {
+        color: var(--secondarybtntxt);
+        background: var(--secondarybtnbg);
+
+        &::before {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &:hover {
+        &::before {
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
+    }
+
+    &:disabled {
+        background: var(--disabledbtnbg) !important;
+        border-color: var(--disabledbtnborder) !important;
+        color: var(--disabledbtntext) !important;
+
+        &::before {
+            content: unset;
+        }
+    }
+}

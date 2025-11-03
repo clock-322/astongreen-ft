@@ -1,0 +1,237 @@
+.dashboard {
+    .row {
+        margin: 0 -1rem;
+        row-gap: 2rem;
+
+        >div {
+            padding: 0 1rem;
+        }
+
+        @media (max-width: 767px) {
+            row-gap: 1rem;
+            margin: 0 -0.5rem;
+
+            >div {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+
+
+    .gradient_cards {
+        .gradient_card {
+            padding: 2.4rem;
+            background: linear-gradient(75.78deg, #F1E9DA 10.29%, #F9DBFF 87.5%);
+            border-radius: 1.6rem;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            @media (max-width: 1499px) {
+                padding: 1.6rem;
+            }
+
+            .card_icon {
+                width: 7rem;
+                height: 7rem;
+                border-radius: 1.2rem;
+                background-color: var(--dashboardgradientcardicon);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-right: 1.6rem;
+
+                @media (max-width: 1499px) {
+                    width: 5.8rem;
+                    height: 5.8rem;
+                }
+            }
+
+            h3 {
+                font-size: 2.6rem;
+                font-weight: 700;
+                color: var(--secondarytxt);
+
+                @media (max-width: 1499px) {
+                    font-size: 2.2rem;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: var(--dashboardgradientcardtxt);
+                margin-top: 0.4rem;
+
+                @media (max-width: 1499px) {
+                    font-size: 1.4rem;
+                }
+            }
+
+            &.secondary_card {
+                background: linear-gradient(80.29deg, #CAEDE5 7.97%, #CAD9FA 91.6%);
+            }
+        }
+    }
+
+    .dashboard_card {
+        box-shadow: 0px 0px 12px 0px #0000001A;
+        background-color: var(--dashboardcardbg);
+        padding: 2.4rem;
+        border-radius: 1.6rem;
+
+        @media (min-width: 768px) {
+            height: 100%;
+        }
+
+        @media (max-width: 1499px) {
+            padding: 1.6rem;
+        }
+
+        .card_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.2rem;
+
+            @media (max-width: 1499px) {
+                margin-bottom: 1.6rem;
+            }
+
+
+            h2 {
+                font-weight: 600;
+                font-size: 2rem;
+                color: var(--secondarytxt);
+
+                @media (max-width: 1499px) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            a {
+                color: var(--base);
+                font-size: 1.6rem;
+                font-weight: 600;
+
+                @media (max-width: 1499px) {
+                    font-size: 1.4rem;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .custom_select {
+                .select_in {
+                    .select__control {
+                        width: 10.8rem;
+                        font-size: 1.4rem;
+                        padding: 0 1.6rem;
+                        height: 3.6rem;
+                        min-height: 0;
+
+                        .select__indicators {
+                            .select__indicator {
+                                background-size: 1rem;
+                                width: 1.41rem;
+                                height: 0.8rem;
+                            }
+                        }
+                    }
+
+                    .select__menu {
+                        padding: 1rem 1.6rem;
+
+                        .select__option {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .live_projects {
+        ul {
+            max-height: 34rem;
+            overflow: auto;
+            padding-right: 0.6rem;
+
+            @media (max-width: 767px) {
+                max-height: unset;
+            }
+
+            &::-webkit-scrollbar {
+                width: 0.6rem;
+            }
+
+            li {
+                &:not(:last-of-type) {
+                    margin-bottom: 1rem;
+
+                    @media (max-width: 1499px) {
+                        margin-bottom: 0.6rem;
+                    }
+                }
+
+                .live_project {
+                    background-color: var(--dashboardliveprojectbg);
+                    border-radius: 1.6rem;
+                    padding: 1.5rem;
+                    display: flex;
+                    align-items: center;
+
+                    @media (max-width: 1799px) {
+                        padding: 0.8rem;
+                    }
+
+                    >img {
+                        width: 7rem;
+                        height: 7rem;
+                        border-radius: 1.6rem;
+                        flex-shrink: 0;
+                        margin-right: 1.9rem;
+
+                        @media (max-width: 1799px) {
+                            width: 5.6rem;
+                            height: 5.6rem;
+                            margin-right: 0.8rem;
+                        }
+                    }
+
+                    h4 {
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        color: var(--dashboardliveprojecttxt);
+
+                        @media (max-width: 1799px) {
+                            font-size: 1.4rem;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 0.9rem;
+
+                            @media (max-width: 1799px) {
+                                margin-bottom: 0.6rem;
+                            }
+                        }
+
+                        span {
+                            color: var(--secondarytxt);
+                        }
+                    }
+
+                    .total {
+                        align-self: flex-start;
+                        text-align: right;
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

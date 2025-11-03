@@ -1,0 +1,165 @@
+.onboard_layout {
+    display: flex;
+
+    .onboard_left {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        padding: 2.4rem 0 0;
+        background: var(--onboardbg);
+        width: 50%;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        .txt_box {
+            max-width: 60rem;
+            margin: 0 auto 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            @media (max-width: 1579px) {
+                max-width: 54rem;
+            }
+
+            @media (max-width: 1399px) {
+                max-width: 40rem;
+            }
+
+            @media (max-width: 1199px) {
+                max-width: 34rem;
+            }
+
+            @media (max-width: 991px) {
+                max-width: 30rem;
+            }
+
+            .logo {
+                width: 26.5rem;
+
+                @media (max-width: 1399px) {
+                    width: 20rem;
+                }
+
+                @media (max-width: 1199px) {
+                    width: 16rem;
+                }
+            }
+
+            h1 {
+                // margin: 7.8rem 0 1.6rem;
+                font-weight: 400;
+                font-size: 4.8rem;
+
+                @media (max-width: 1579px) {
+                    font-size: 3.6rem;
+                }
+
+                @media (max-width: 1399px) {
+                    font-size: 2.8rem;
+                }
+
+                @media (max-width: 1199px) {
+                    font-size: 2.4rem;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 2rem;
+                    margin: 1.6rem 0;
+                }
+
+                span {
+                    font-weight: 700;
+                    display: inline;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 2rem;
+                max-width: 47.8rem;
+                line-height: 3rem;
+
+                @media (max-width: 1579px) {
+                    font-size: 1.8rem;
+                    line-height: 1.4;
+                }
+
+                @media (max-width: 1399px) {
+                    font-size: 1.6rem;
+                }
+
+                @media (max-width: 1199px) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .onboard_img {
+            margin-top: auto;
+            width: 100%;
+        }
+    }
+
+    .onboard_right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        padding: 2.4rem;
+        min-height: 100dvh;
+        position: relative;
+        z-index: 1;
+
+        @media (max-width: 767px) {
+            width: 100%;
+
+            .logo {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 31.2rem;
+            height: 24.4rem;
+            background-image: url("../../../assets/images/onboard-right.png");
+            background-size: contain;
+            background-position: top right;
+            background-repeat: no-repeat;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            line-height: 100%;
+            color: var(--secondarytxt);
+        }
+
+        .onboard_box {
+            width: 100%;
+            max-width: 54rem;
+
+
+            form {
+                .mb_input {
+                    margin-bottom: 2rem;
+                }
+
+                .submit_btn {
+                    margin-top: 3.6rem;
+                }
+            }
+        }
+    }
+}

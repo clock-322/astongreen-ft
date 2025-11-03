@@ -1,0 +1,94 @@
+@use "./assets/theme/_var.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    background-color: var(--bodybg);
+    color: var(--txt);
+    font-family: var(--basefont);
+}
+
+img,
+svg,
+canvas,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+a,
+span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+    margin-bottom: 0;
+    color: var(--txt);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.clickable {
+    cursor: pointer !important;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.sizes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-weight: 500;
+    font-size: 1.6rem;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    background-color: #EFEFEE;
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D0E5BA;
+    border-radius: 5rem;
+}

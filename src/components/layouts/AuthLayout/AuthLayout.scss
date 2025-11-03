@@ -1,0 +1,21 @@
+.auth_layout {
+    padding-left: 31.4rem;
+
+    .layout_in {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+
+        .auth_content {
+            padding: 3rem;
+
+            @media (max-width: 1199px) {
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        padding: 0;
+    }
+}

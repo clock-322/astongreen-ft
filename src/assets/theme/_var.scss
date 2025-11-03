@@ -1,0 +1,94 @@
+:root {
+    --basefont: 'Montserrat', sans-serif;
+
+
+    --bodybg: #fff;
+    --txt: #000;
+    --secondarytxt: #0D2E1E;
+    --lighttxt: #6C7381;
+
+    --spinnerclr: #577F2B;
+
+    --basegradient: linear-gradient(90deg, #577F2B 0%, #A5DB6A 100%);
+    --base-reversegradient: linear-gradient(-90deg, #577F2B 0%, #A5DB6A 100%);
+
+    --danger: #FF2E2E;
+    --base: #7AA747;
+
+
+    // button
+    --btntxt: #FFF;
+    --disabledbtnbg: #E0E0E0;
+    --disabledbtnborder: rgba(0, 0, 0, 0.1);
+    --disabledbtntext: rgba(0, 0, 0, 0.5);
+
+    --secondarybtnbg: #EFEFEF;
+    --secondarybtntxt: #6C7381;
+
+    // input
+    --inputbg: #9E9F9D2B;
+    --inputtxt: #0D2E1E;
+    --inputplacehoder: #6C7381;
+    --inputfocusbg: #9E9F9D60;
+    --disabledinputbg: #E0E0E0;
+    --disabledinputtext: rgba(0, 0, 0, 0.5);
+    --labeltxt: #6C7381;
+
+    // onboard
+    --onboardbg: linear-gradient(90deg, #ECFED9 0%, #F2FFE4 47.77%, #EFFFDD 98.79%);
+    --connectwalletbg: #9E9F9D2B;
+    --connectwalletbgFocus: #9E9F9D60;
+    --onboardorline: rgba(0, 0, 0, 0.1);
+
+
+    //sidebar
+    --sidebarlinktxt: #9E9F9D;
+    --sidebarbg: #F6FBF0;
+    --sidebarborder: #D9E8E0;
+    --sidebarlinkactive: #FFFFFF;
+    --sidebarsublinkactive: #608932;
+
+    // header
+    --headerbg: #F6FBF0;
+    --headerborder: #D9E8E0;
+    --headeraddresstxt: #FFF;
+
+    --headernotifybg: #EFEFEF;
+    --headernotifyactivedot: #E23A56;
+
+    --headernotifymenubg: #FFFFFF;
+    --headernotifyviewalltxt: #7AA747;
+    --headernotifydesctxt: #6B6E67;
+    --headernotifyitembg: #F3FCE9;
+
+    --headerprofileimgbg: #00D670;
+    --headerprofilemenubg: #EFEFEF;
+    --headerprofilemenutxt: #0D2E1E;
+    --headerprofilemenulogout: #E23A56;
+
+    --headertoggler: #00D670;
+
+
+    //footer
+    --footerbg: #F6FBF0;
+    --footerborder: #F6FBF0;
+
+    // modal
+    --modalbg: #FFF;
+
+
+    // dashboard
+    --dashboardgradientcardicon: #FFF;
+    --dashboardgradientcardtxt: #6B6E67;
+    --dashboardcardbg: #FFFFFF;
+    --dashboardliveprojectbg: #F3FCE9;
+    --dashboardliveprojecttxt: #6B6E67;
+
+
+    // select
+    --selectbg: #EFEFEF;
+    --selectplaceholder: #6C7381;
+    --selectdropdown: #EFEFEF;
+    --selectactiveitem: #00D670;
+
+}

@@ -1,0 +1,62 @@
+.custom_input {
+    .input_in {
+
+        input,
+        textarea {
+            height: 5rem;
+            border: none;
+            outline: none;
+            font-size: 1.6rem;
+            font-weight: 400;
+            padding: 0 2rem;
+            transition: 300ms ease-in-out;
+            background-color: var(--inputbg);
+            border-radius: 1.6rem;
+            color: var(--inputtxt);
+            width: 100%;
+
+            @media (max-width: 1479px) {
+                font-size: 1.4rem;
+                line-height: 1.4;
+                height: 4.4rem;
+            }
+
+            &:enabled {
+                &:focus {
+                    background-color: var(--inputfocusbg);
+                }
+            }
+
+            &:disabled,
+            &:read-only {
+                background-color: var(--disabledinputbg) !important;
+                color: var(--disabledinputtext) !important;
+            }
+
+            &::placeholder {
+                color: var(--inputplacehoder);
+            }
+        }
+
+        textarea {
+            min-height: 8.8rem;
+            padding-top: 1.6rem;
+            resize: none;
+        }
+
+        &.icon_input {
+            position: relative;
+
+            input {
+                padding-right: 5rem;
+            }
+
+            .input_icon {
+                position: absolute;
+                top: 50%;
+                right: 1.6rem;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

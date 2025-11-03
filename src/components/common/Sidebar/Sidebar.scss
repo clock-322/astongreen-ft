@@ -1,0 +1,142 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    padding: 2rem 2.4rem;
+    max-width: 31.4rem;
+    width: 100%;
+    background-color: var(--sidebarbg);
+    border-right: 1px solid var(--sidebarborder);
+
+    @media (max-width: 1199px) {
+        transition: 300ms ease-in-out;
+        z-index: 1055;
+
+        &:not(.active) {
+            transform: translateX(-100%);
+        }
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 3.4rem;
+    }
+
+    .sidebar_in {
+        >* {
+            &:not(:last-child) {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        .dropdown-toggle {
+            box-shadow: none !important;
+
+            &::after {
+                background-image: url('data:image/svg+xml,<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.28606 7.06144L0.442747 1.34586C0.381741 1.28635 0.333319 1.21568 0.300246 1.13787C0.267175 1.06006 0.250102 0.976644 0.25 0.892384C0.249899 0.808124 0.266772 0.724671 0.299656 0.646786C0.332541 0.568902 0.380792 0.498114 0.441655 0.438463C0.502519 0.378812 0.574802 0.331465 0.65438 0.299129C0.733957 0.266792 0.819269 0.2501 0.905445 0.25C0.99162 0.249901 1.07697 0.266397 1.15663 0.298551C1.23628 0.330704 1.30868 0.377885 1.36969 0.437396L6.74899 5.69926L12.1294 0.438463C12.2526 0.318134 12.4196 0.250589 12.5938 0.250689C12.7679 0.250789 12.9349 0.318526 13.058 0.438997C13.181 0.559467 13.2501 0.722805 13.25 0.893076C13.2499 1.06335 13.1806 1.2266 13.0574 1.34693L7.2141 7.06784C7.08935 7.18578 6.92227 7.25118 6.74874 7.24998C6.57522 7.24879 6.4091 7.18109 6.28606 7.06144Z" fill="%239E9F9D" stroke="%239E9F9D" stroke-width="0.5"/></svg>');
+                border: none;
+                height: 0.7rem;
+                margin-left: auto;
+                width: 1.3rem;
+            }
+        }
+
+        .dropdown-menu {
+            position: static !important;
+            transform: none !important;
+            background-color: transparent;
+            border: none;
+            padding: 1.5rem 0 0 5.3rem;
+
+            a {
+                display: block;
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: var(--sidebarlinktxt);
+                transition: 300ms ease-in-out;
+
+                &:not(:last-child) {
+                    margin-bottom: 2.1rem;
+                }
+
+                &.active,
+                &:hover {
+                    color: var(--sidebarsublinkactive);
+                }
+            }
+        }
+
+        >a,
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--sidebarlinktxt);
+            height: 6rem;
+            position: relative;
+            z-index: 1;
+            padding: 0 2rem;
+            transition: 0.25s ease-in-out;
+            border-radius: 1.6rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: var(--basegradient);
+                border-radius: inherit;
+                transition: 0.25s ease-in-out;
+                z-index: -1;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            &:not(.active, .show) {
+                &:hover {
+                    color: var(--sidebarsublinkactive);
+                }
+            }
+
+
+            &.active,
+            &.show {
+                color: var(--sidebarlinkactive);
+
+                &::before {
+                    opacity: 1;
+                }
+
+                &::after {
+                    transform: rotate(180deg);
+                    background-image: url('data:image/svg+xml,<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.28606 7.06144L0.442747 1.34586C0.381741 1.28635 0.333319 1.21568 0.300246 1.13787C0.267175 1.06006 0.250102 0.976644 0.25 0.892384C0.249899 0.808124 0.266772 0.724671 0.299656 0.646786C0.332541 0.568902 0.380792 0.498114 0.441655 0.438463C0.502519 0.378812 0.574802 0.331465 0.65438 0.299129C0.733957 0.266792 0.819269 0.2501 0.905445 0.25C0.99162 0.249901 1.07697 0.266397 1.15663 0.298551C1.23628 0.330704 1.30868 0.377885 1.36969 0.437396L6.74899 5.69926L12.1294 0.438463C12.2526 0.318134 12.4196 0.250589 12.5938 0.250689C12.7679 0.250789 12.9349 0.318526 13.058 0.438997C13.181 0.559467 13.2501 0.722805 13.25 0.893076C13.2499 1.06335 13.1806 1.2266 13.0574 1.34693L7.2141 7.06784C7.08935 7.18578 6.92227 7.25118 6.74874 7.24998C6.57522 7.24879 6.4091 7.18109 6.28606 7.06144Z" fill="%23fff" stroke="%23fff" stroke-width="0.5"/></svg>');
+                }
+            }
+
+            .item_icon {
+                width: 2.3rem;
+                height: 2.3rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.sidebar_overlay {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(2rem);
+    transition: 300ms ease-in-out;
+    z-index: 1045;
+
+    &:not(.active) {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
