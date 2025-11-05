@@ -55,7 +55,7 @@ const Dashboard = () => {
                             <div className="dashboard_card">
                                 <div className="card_header">
                                     <h2>Ownership Token</h2>
-                                    <Select isSearchable={false} placeholder="Range" options={options} defaultValue={options[0]} />
+                                    <Select className={"small_select"} placeholder="Range" options={options} defaultValue={options[0]} />
                                 </div>
                                 <img src={linechart} alt="" className="d-block mx-auto" />
                             </div>
@@ -68,7 +68,7 @@ const Dashboard = () => {
                             <div className="dashboard_card">
                                 <div className="card_header">
                                     <h2>Co2 Offset Token</h2>
-                                    <Select isSearchable={false} placeholder="Range" options={options} defaultValue={options[0]} />
+                                    <Select className={"small_select"} placeholder="Range" options={options} defaultValue={options[0]} />
                                 </div>
                                 <img src={piechart} alt="" className="d-block mx-auto" />
                             </div>

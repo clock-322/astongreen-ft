@@ -1,0 +1,62 @@
+.pdd_management {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        margin-bottom: 2rem;
+
+        .custom_select {
+            width: 16rem;
+        }
+
+        .custom_input,
+        .custom_datepicker {
+            width: 18rem;
+        }
+
+        @media (max-width: 449px) {
+
+            .custom_select,
+            .custom_input,
+            .custom_datepicker {
+                width: calc(50% - 0.6rem);
+            }
+        }
+
+        @media (max-width: 369px) {
+
+            .custom_select,
+            .custom_input,
+            .custom_datepicker {
+                width: 100%;
+            }
+        }
+    }
+
+    .custom_table {
+        .status {
+            text-transform: capitalize;
+
+            &.completed {
+                color: var(--green);
+            }
+
+            &.pending {
+                color: var(--yellow);
+            }
+        }
+
+        .action {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+
+            button {
+                width: 8rem;
+                border-radius: 1rem;
+                font-size: 1.4rem;
+                height: 3.6rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.custom_pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-top: 3rem;
+
+    .dots {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--paginatetxt);
+        transform: translateY(-0.34rem);
+    }
+
+    button {
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 1.2rem;
+        position: relative;
+        z-index: 1;
+        transition: 300ms ease-in;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--paginatetxt);
+
+        &::before {
+            content: "";
+            inset: 0;
+            position: absolute;
+            background: var(--basegradient);
+            opacity: 0;
+            visibility: hidden;
+            transition: 300ms ease-in;
+            border-radius: inherit;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        &.active {
+            color: var(--paginateactivetxt);
+
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

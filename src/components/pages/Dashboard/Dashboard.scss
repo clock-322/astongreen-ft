@@ -123,34 +123,6 @@
                     text-decoration: underline;
                 }
             }
-
-            .custom_select {
-                .select_in {
-                    .select__control {
-                        width: 10.8rem;
-                        font-size: 1.4rem;
-                        padding: 0 1.6rem;
-                        height: 3.6rem;
-                        min-height: 0;
-
-                        .select__indicators {
-                            .select__indicator {
-                                background-size: 1rem;
-                                width: 1.41rem;
-                                height: 0.8rem;
-                            }
-                        }
-                    }
-
-                    .select__menu {
-                        padding: 1rem 1.6rem;
-
-                        .select__option {
-                            font-size: 1.4rem;
-                        }
-                    }
-                }
-            }
         }
     }
 

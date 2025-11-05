@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../../utils/constants';
 import Button from '../../common/Button/Button';
-import Input from '../../common/form/input/Input';
+import Input from '../../common/form/Input/Input';
 import Password from '../../common/form/Password/Password';
 import "./Login.scss";
 

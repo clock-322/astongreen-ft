@@ -14,11 +14,11 @@ const Sidebar = ({ show, setShow }) => {
     }
     const routes = [
         { name: "Dashboard", icon: <DashboardIcon />, to: ROUTES.DASHBOARD, },
-        { name: "PDD Management", icon: <PDDIcon />, to: "", },
+        { name: "PDD Management", icon: <PDDIcon />, to: ROUTES.PDD_MANAGEMENT, },
         { name: "Company Registration", icon: <CompanyRegisterationIcon />, to: "", },
         { name: "Project Management", icon: <ProjectManagementIcon />, to: "", },
         { name: "Token Management", icon: <TokenManagementIcon />, to: "", },
-        { name: "User Management", icon: <UserMangementIcon />, to: "", },
+        { name: "User Management", icon: <UserMangementIcon />, to: ROUTES.USER_MANAGEMENT, },
         { name: "Role Management", icon: <RoleManagementIcon />, to: ROUTES.ROLE_MANAGEMENT, },
         {
             name: "Review Requests", icon: <ReviewRequests />,

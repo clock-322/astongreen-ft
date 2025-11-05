@@ -13,6 +13,13 @@ const Header = ({ show, setShow }) => {
     const title = {
         [ROUTES.DASHBOARD]: "Dashboard",
         [ROUTES.ROLE_MANAGEMENT]: "Role Management",
+        [ROUTES.PDD_MANAGEMENT]: "PDD Management",
+        [ROUTES.PDD_DETAILS]: "PDD Management",
+        [ROUTES.ADD_PROJECT]: "Create Project",
+        [ROUTES.USER_MANAGEMENT]: "User Management",
+        [ROUTES.USER_DETAILS]: "User Details",
+        [ROUTES.ADD_USER]: "Create User",
+        [ROUTES.EDIT_USER]: "Edit User",
     }
     return (
         <header className="header">

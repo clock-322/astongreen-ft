@@ -39,6 +39,10 @@
         padding: 0 2rem;
     }
 
+    svg {
+        margin-right: 1.8rem;
+    }
+
     .custom_spinner {
         display: inline-flex;
 
@@ -56,6 +60,40 @@
         }
     }
 
+    &.bordered_btn {
+        border: 1px solid var(--btnborderedborder);
+        background: var(--btnborderedbg);
+        color: var(--btnborderedtxt);
+
+        &::before {
+            background: var(--btnborderedbg);
+        }
+    }
+
+    &.blue_btn {
+        background: var(--btnbluebg);
+        color: var(--btnbluetxt);
+
+        &::before {
+            background: var(--btnbluebg);
+        }
+    }
+
+    &.faded_btn {
+        background: var(--btnfadedbg);
+        color: var(--btnfadedtxt);
+    }
+
+    &.danger_btn {
+        background: var(--dangerbtnbg);
+        color: var(--dangerbtntxt);
+        border: 1px solid var(--dangerbtnborder);
+
+        &::before {
+            background: var(--dangerbtnbg);
+        }
+    }
+
     &:hover {
         &::before {
             transform: scaleX(1);
@@ -65,7 +103,7 @@
 
     &:disabled {
         background: var(--disabledbtnbg) !important;
-        border-color: var(--disabledbtnborder) !important;
+        border-color: transparent !important;
         color: var(--disabledbtntext) !important;
 
         &::before {

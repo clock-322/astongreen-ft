@@ -12,6 +12,12 @@
             padding: 0 2.4rem;
             border-radius: 1.6rem;
 
+            @media (max-width: 1479px) {
+                font-size: 1.4rem;
+                line-height: 1.4;
+                height: 4.4rem;
+            }
+
             .select__value-container {
                 padding: 0;
                 margin: 0;
@@ -22,7 +28,7 @@
                 }
 
                 .select__placeholder {
-                    color: var(--selectplaceholder);
+                    color: var(--secondarytxt);
                     margin: 0;
                 }
             }
@@ -54,6 +60,12 @@
             border: none;
             box-shadow: none;
 
+            .select__menu-notice {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: var(--lighttxt);
+            }
+
             .select__option {
                 padding: 0;
                 font-size: 1.6rem;
@@ -74,6 +86,48 @@
                 &:not(:last-child) {
                     margin-bottom: 1.5rem;
                 }
+            }
+        }
+    }
+
+    &.small_select {
+        .select_in {
+            .select__control {
+                width: 10.8rem;
+                font-size: 1.4rem;
+                padding: 0 1.6rem;
+                height: 3.6rem;
+                min-height: 0;
+
+                .select__indicators {
+                    .select__indicator {
+                        background-size: 1rem;
+                        width: 1.41rem;
+                        height: 0.8rem;
+                    }
+                }
+            }
+
+            .select__menu {
+                padding: 1rem 1.6rem;
+
+                .select__option {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    &.white_select {
+        .select_in {
+            .select__control {
+                background-color: var(--whiteinputbg);
+                color: var(--whiteinputtxt);
+            }
+
+            .select__menu {
+                background-color: var(--whiteinputbg);
+                box-shadow: 0px 0px 12px 0px #00000012;
             }
         }
     }

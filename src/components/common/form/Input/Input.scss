@@ -58,5 +58,37 @@
                 transform: translateY(-50%);
             }
         }
+
+        &.left_icon_input {
+            position: relative;
+
+            input {
+                padding-left: 5rem;
+            }
+
+            .input_left_icon {
+                position: absolute;
+                top: 50%;
+                left: 1.6rem;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &.white_input {
+        .input_in {
+
+            input,
+            textarea {
+                background-color: var(--whiteinputbg);
+                color: var(--whiteinputtxt);
+
+                &:enabled {
+                    &:focus {
+                        background-color: var(--whiteinputbg);
+                    }
+                }
+            }
+        }
     }
 }

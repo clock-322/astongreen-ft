@@ -4,7 +4,7 @@ import { clsx } from "../../../../utils/utils";
 import Error from "../Error/Error";
 import Label from "../Label/Label";
 
-const Select = ({ name, error, className, label, ...rest }) => {
+const Select = ({ name, error, className, label, isSearchable = false, ...rest }) => {
 
     return (
         <div className={clsx("custom_select", className)}>
@@ -12,6 +12,7 @@ const Select = ({ name, error, className, label, ...rest }) => {
             <ReactSelect
                 {...rest}
                 classNamePrefix="select"
+                isSearchable={isSearchable}
                 className="select_in"
             />
             {error && <Error>{error}</Error>}

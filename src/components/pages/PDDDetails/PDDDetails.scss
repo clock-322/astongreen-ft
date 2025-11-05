@@ -1,0 +1,244 @@
+.pdd_details {
+    .nav {
+        align-items: center;
+        margin-bottom: 3rem;
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+            margin-bottom: 1.6rem;
+        }
+
+        >a {
+            font-weight: 400;
+            box-shadow: none;
+            font-size: 1.6rem;
+            padding: 0;
+            color: var(--lighttxt);
+            transition: 300ms ease-in-out;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid transparent;
+
+            @media (max-width: 1499px) {
+                font-size: 1.4rem;
+            }
+
+            &.active {
+                font-weight: 600;
+                color: var(--secondarytxt);
+                border-color: var(--secondarytxt);
+            }
+
+            &:not(:first-child) {
+                margin-left: 3rem;
+            }
+        }
+
+        .filters {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            gap: 1.2rem;
+
+            @media (max-width: 991px) {
+                width: 100%;
+                margin-top: 1.6rem;
+            }
+
+            @media (max-width: 449px) {
+                flex-wrap: wrap;
+            }
+
+            .project_type {
+                width: 19rem;
+
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+
+            .status {
+                width: 16rem;
+
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+
+            .custom_datepicker {
+                width: 18rem;
+
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .row {
+        margin: 0 -1rem;
+        row-gap: 2rem;
+
+        >div {
+            padding: 0 1rem;
+        }
+    }
+
+    .gradient_cards {
+        .row {
+
+            >div {
+
+                &:nth-child(even) {
+                    .gradient_card {
+                        background: linear-gradient(80.29deg, #CAEDE5 7.97%, #CAD9FA 91.6%);
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .gradient_card {
+                        background: linear-gradient(75.78deg, #F1E9DA 10.29%, #F9DBFF 87.5%);
+                    }
+                }
+            }
+        }
+
+        .gradient_card {
+            padding: 2.4rem;
+            border-radius: 1.6rem;
+            display: flex;
+            align-items: flex-start;
+            height: 100%;
+
+            @media (max-width: 1499px) {
+                padding: 1.6rem;
+            }
+
+            .card_icon {
+                width: 7rem;
+                background-color: var(--gradientcardicon);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 7rem;
+                border-radius: 1.2rem;
+                flex-shrink: 0;
+                margin-right: 1.6rem;
+
+                @media (max-width: 1499px) {
+                    width: 5.8rem;
+                    height: 5.8rem;
+                }
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: var(--gradientcardtxt);
+
+                @media (max-width: 1499px) {
+                    font-size: 1.4rem;
+                }
+            }
+
+            h3 {
+                font-size: 2.6rem;
+                font-weight: 700;
+                color: var(--secondarytxt);
+
+                margin: 0.8rem 0;
+
+                @media (max-width: 1499px) {
+                    font-size: 2.2rem;
+                }
+            }
+
+            h4 {
+                color: var(--gradientcardgreen);
+                font-size: 1.4rem;
+                font-weight: 600;
+
+                @media (max-width: 1499px) {
+                    font-size: 1.2rem;
+                }
+
+            }
+        }
+    }
+
+    .custom_card {
+        padding: 2.4rem;
+        background-color: var(--cardbg);
+        border-radius: 1.6rem;
+        height: 100%;
+        box-shadow: 0px 0px 12px 0px #0000001A;
+
+        @media (max-width: 1499px) {
+            padding: 1.6rem;
+        }
+
+        .card_header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+
+            @media (max-width: 1499px) {
+                gap: 1rem;
+                margin-bottom: 1.6rem;
+            }
+
+            h2 {
+                font-weight: 600;
+                font-size: 2rem;
+                color: var(--secondarytxt);
+
+                @media (max-width: 1499px) {
+                    font-size: 1.8rem;
+                }
+
+                @media (max-width: 1199px) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .custom_input {
+                width: 18rem;
+            }
+
+            .target {
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: var(--secondarytxt);
+                height: 3.6rem;
+                padding: 0 1.3rem;
+                background-color: var(--targettxtbg);
+                border-radius: 1.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 1499px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .custom_table {
+            .status {
+                text-transform: capitalize;
+
+                &.online {
+                    color: var(--green);
+                }
+
+                &.offline {
+                    color: var(--danger);
+                }
+
+                &.partial {
+                    color: var(--yellow);
+                }
+            }
+        }
+    }
+}

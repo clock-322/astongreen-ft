@@ -1,0 +1,47 @@
+.edit_user_details {
+    .details_card {
+        margin-top: 8rem;
+        background-color: var(--secondarycardbg);
+        border-radius: 2rem;
+        border: 1px solid var(--secondarycardborder);
+        padding: 0 2.4rem 2.4rem;
+        max-width: 110.7rem;
+        margin-inline: auto;
+
+        @media (max-width: 1499px) {
+            padding: 1.6rem;
+            border-radius: 1.6rem;
+        }
+
+        .profile_img {
+            width: 11.4rem;
+            height: 11.4rem;
+            border: 0.7rem solid var(--profileimgborder);
+            border-radius: 50%;
+            object-fit: cover;
+            transform: translateY(-50%);
+            margin: 0 auto;
+            display: block;
+        }
+
+        .row {
+            margin: 0 -1.25rem;
+            row-gap: 2.4rem;
+
+            >div {
+                padding: 0 1.25rem;
+            }
+        }
+        
+        .action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 12.8rem;
+
+            button {
+                width: 47.3rem;
+            }
+        }
+    }
+}

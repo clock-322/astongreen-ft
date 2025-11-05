@@ -1,0 +1,70 @@
+.user_details {
+    .details_card {
+        margin-top: 8rem;
+        background-color: var(--secondarycardbg);
+        border-radius: 2rem;
+        border: 1px solid var(--secondarycardborder);
+        padding: 0 2.4rem 2.4rem;
+        max-width: 76.7rem;
+        margin-inline: auto;
+
+        @media (max-width: 1499px) {
+            padding: 1.6rem;
+            border-radius: 1.6rem;
+        }
+
+        .profile_img {
+            width: 11.4rem;
+            height: 11.4rem;
+            border: 0.7rem solid var(--profileimgborder);
+            border-radius: 50%;
+            object-fit: cover;
+            transform: translateY(-50%);
+            margin: 0 auto;
+            display: block;
+        }
+
+        .row {
+            margin: -0.5rem;
+
+            >div {
+                padding: 0.5rem;
+            }
+        }
+
+        .detail_card {
+            background-color: var(--detailcardbg);
+            border-radius: 1.6rem;
+            padding: 2.4rem;
+            height: 100%;
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: var(--detailcardlighttxt);
+                margin-bottom: 0.4rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: var(--secondarytxt);
+                white-space: nowrap;
+                overflow: clip;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .action {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            justify-content: center;
+            margin-top: 3.2rem;
+
+            button {
+                width: 15rem;
+            }
+        }
+    }
+}

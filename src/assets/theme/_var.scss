@@ -14,16 +14,31 @@
 
     --danger: #FF2E2E;
     --base: #7AA747;
-
+    --green: #6E9A3E;
+    --yellow: #FFC527;
 
     // button
     --btntxt: #FFF;
-    --disabledbtnbg: #E0E0E0;
+    --disabledbtnbg: #EFEFEF;
     --disabledbtnborder: rgba(0, 0, 0, 0.1);
-    --disabledbtntext: rgba(0, 0, 0, 0.5);
+    --disabledbtntext: #C2C0C0;
 
     --secondarybtnbg: #EFEFEF;
     --secondarybtntxt: #6C7381;
+
+    --btnborderedborder: #6E9A3E;
+    --btnborderedbg: #6E9A3E1A;
+    --btnborderedtxt: #6E9A3E;
+
+    --btnbluebg: #0CA2D91A;
+    --btnbluetxt: #0CA2D9;
+
+    --btnfadedtxt: #0D2E1E;
+    --btnfadedbg: #EFEFEF;
+
+    --dangerbtntxt: var(--danger);
+    --dangerbtnborder: var(--danger);
+    --dangerbtnbg: #FF2E2E1A;
 
     // input
     --inputbg: #9E9F9D2B;
@@ -92,12 +107,46 @@
     --selectactiveitem: #00D670;
 
 
+    // select
+    --datepickerdropdown: #EFEFEF;
+    --datepickerkeyboardselected: #00D670;
+
+
     // table
     --tableheadbg: #F3FCE9;
     --tableheadborder: #D9E8E0;
     --tableborder: #D9E8E0;
     --tabletdborder: #D9E8E0;
 
+    // pagination
+    --paginateactivetxt: #FFFFFF;
+    --paginatetxt: #9E9F9D;
+
     // checkbox
     --checkboxbg: #EFEFEE;
+
+
+    // gradient card
+    --gradientcardicon: #FFFFFF;
+    --gradientcardtxt: #6B6E67;
+    --gradientcardgreen: #0CB862;
+
+    --cardbg: #FFFFFF;
+    --targettxtbg: #EFEFEF;
+
+    // breadcrumbs
+    --breadcrumbtxt: #9E9F9D;
+    --breadcrumbtxtactive: #0D2E1E;
+
+    --secondarycardbg: #F3FCE9;
+    --secondarycardborder: #D9E8E0;
+
+    // white inputs
+    --whiteinputbg: #FFF;
+    --whiteinputtxt: #0D2E1E;
+
+    // user details
+    --profileimgborder: #FFF;
+    --detailcardbg: #FFF;
+    --detailcardlighttxt: #9E9F9D;
 }
