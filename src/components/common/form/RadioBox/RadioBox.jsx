@@ -1,20 +1,19 @@
 import { clsx } from "../../../../utils/utils";
 import Error from "../Error/Error";
-import Label from "../Label/Label";
-import "./Checkbox.scss";
+import "./Radiobox.scss";
 
-const Checkbox = ({ name, error, className, label, ...rest }) => {
+const Radiobox = ({ name, error, id, className, label, ...rest }) => {
     return (
-        <div className={clsx("custom_checkbox", className)}>
+        <div className={clsx("custom_radiobox", className)}>
             <div className={clsx("input_in", error && "error_input")}>
                 <input
                     {...rest}
-                    type="checkbox"
+                    type="radio"
                     name={name}
-                    id={name}
+                    id={id}
                 />
                 {
-                    label && <label htmlFor={name}>{label}</label>
+                    label && <label htmlFor={id}>{label}</label>
                 }
             </div>
             {
@@ -24,4 +23,4 @@ const Checkbox = ({ name, error, className, label, ...rest }) => {
     )
 }
 
-export default Checkbox
+export default Radiobox

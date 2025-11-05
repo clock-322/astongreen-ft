@@ -4,6 +4,7 @@ import OnboardLayout from './components/layouts/OnboardLayout/OnboardLayout'
 import AddProject from './components/pages/AddProject/AddProject'
 import AddUser from './components/pages/AddUser/AddUser'
 import ConnectWallet from './components/pages/ConnectWallet/ConnectWallet'
+import CreateToken from './components/pages/CreateToken/CreateToken'
 import Dashboard from './components/pages/Dashboard/Dashboard'
 import EditUserDetails from './components/pages/EditUserDetails/EditUserDetails'
 import Login from './components/pages/Login/Login'
@@ -39,6 +40,7 @@ const Application = () => {
 
                     <Route path={ROUTES.TOKEN_MANAGEMENT} element={<TokenManagment />} />
                     <Route path={ROUTES.TOKEN_DETAILS} element={<TokenDetails />} />
+                    <Route path={ROUTES.CREATE_TOKEN} element={<CreateToken />} />
                 </Route>
             </Routes>
         </BrowserRouter>
