@@ -11,4 +11,7 @@ export const ROUTES = {
     ADD_USER: "/add-user",
     USER_DETAILS: "/user-details",
     EDIT_USER: "/edit-user-details",
+    TOKEN_MANAGEMENT: "/token-management",
+    TOKEN_DETAILS: "/token-deails",
+    CREATE_TOKEN: "/create-token",
 }

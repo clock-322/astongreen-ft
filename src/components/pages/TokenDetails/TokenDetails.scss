@@ -1,0 +1,48 @@
+.token_details {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        margin-bottom: 2rem;
+
+        .nav {
+            align-items: center;
+
+            @media (max-width: 991px) {
+                flex-wrap: wrap;
+            }
+
+            >a {
+                font-weight: 400;
+                box-shadow: none;
+                font-size: 1.6rem;
+                padding: 0;
+                color: var(--lighttxt);
+                transition: 300ms ease-in-out;
+                padding-bottom: 0.4rem;
+                border-bottom: 1px solid transparent;
+
+                @media (max-width: 1499px) {
+                    font-size: 1.4rem;
+                }
+
+                &.active {
+                    font-weight: 600;
+                    color: var(--secondarytxt);
+                    border-color: var(--secondarytxt);
+                }
+
+                &:not(:first-child) {
+                    margin-left: 2rem;
+                }
+            }
+        }
+
+    }
+
+    .custom_table {
+        .txn_id {
+            color: var(--blue);
+        }
+    }
+}

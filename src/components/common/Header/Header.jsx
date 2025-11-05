@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
-import logo from "../../../assets/logo/logo.png"
 import { SwitchOffIcon } from "../../../assets/icons/icons"
 import metamask from "../../../assets/icons/metamask.svg"
+import logo from "../../../assets/logo/logo.png"
 import { ROUTES } from "../../../utils/constants"
 import { clsx } from "../../../utils/utils"
 import "./Header.scss"
@@ -20,6 +20,9 @@ const Header = ({ show, setShow }) => {
         [ROUTES.USER_DETAILS]: "User Details",
         [ROUTES.ADD_USER]: "Create User",
         [ROUTES.EDIT_USER]: "Edit User",
+        [ROUTES.TOKEN_MANAGEMENT]: "Token Management",
+        [ROUTES.TOKEN_DETAILS]: "Token Management",
+        [ROUTES.CREATE_TOKEN]: "Token Management",
     }
     return (
         <header className="header">

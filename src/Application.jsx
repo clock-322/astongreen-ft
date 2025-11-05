@@ -10,6 +10,8 @@ import Login from './components/pages/Login/Login'
 import PDDDetails from './components/pages/PDDDetails/PDDDetails'
 import PDDManagement from './components/pages/PDDManagement/PDDManagement'
 import RoleManagement from './components/pages/RoleManagement/RoleManagement'
+import TokenDetails from './components/pages/TokenDetails/TokenDetails'
+import TokenManagment from './components/pages/TokenManagment/TokenManagment'
 import UserDetails from './components/pages/UserDetails/UserDetails'
 import UserManagement from './components/pages/UserManagement/UserManagement'
 import { ROUTES } from './utils/constants'
@@ -34,6 +36,9 @@ const Application = () => {
                     <Route path={ROUTES.USER_DETAILS} element={<UserDetails />} />
                     <Route path={ROUTES.EDIT_USER} element={<EditUserDetails />} />
                     <Route path={ROUTES.ADD_USER} element={<AddUser />} />
+
+                    <Route path={ROUTES.TOKEN_MANAGEMENT} element={<TokenManagment />} />
+                    <Route path={ROUTES.TOKEN_DETAILS} element={<TokenDetails />} />
                 </Route>
             </Routes>
         </BrowserRouter>
