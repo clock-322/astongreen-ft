@@ -20,7 +20,7 @@ const ProfileDropdown = () => {
             <Dropdown className="profile">
                 <Dropdown.Toggle ref={btn}><img src={profilePlaceholder} alt="" /><span>John Doe</span></Dropdown.Toggle>
                 <Dropdown.Menu>
-                    <Link to={ROUTES.PROFILE}><ProfileIcon /> My Profile</Link>
+                    <Link onClick={() => { btn.current && btn.current.click(); }} to={ROUTES.PROFILE}><ProfileIcon /> My Profile</Link>
                     <Link to={"#"} onClick={handleLogout} className="logout"><LogoutIcon /> Logout</Link>
                 </Dropdown.Menu>
             </Dropdown>

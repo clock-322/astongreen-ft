@@ -1,0 +1,216 @@
+.profile_page {
+    .profile_box {
+        max-width: 110.7rem;
+        margin: 0 auto;
+        background-color: var(--secondarycardbg);
+        border-radius: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5.5rem 12rem 5.5rem 21.5rem;
+        position: relative;
+        z-index: 1;
+
+        @media (max-width: 991px) {
+            padding: 4rem 8rem 4rem 16rem;
+        }
+
+        @media (max-width: 767px) {
+            padding: 4rem 8rem;
+        }
+
+        @media (max-width: 649px) {
+            padding: 4rem 4rem;
+        }
+
+        @media (max-width: 449px) {
+            padding: 2.4rem;
+        }
+
+        .sun,
+        .wind,
+        .solar,
+        .fuel {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .sun {
+            top: 2rem;
+            left: 6rem;
+
+            @media (max-width: 991px) {
+                left: 2.4rem;
+                width: 6rem;
+            }
+        }
+
+        .wind {
+            bottom: 0;
+            left: 1.2rem;
+
+            @media (max-width: 991px) {
+                left: 0.4rem;
+                width: 14rem;
+            }
+        }
+
+        .solar {
+            top: -3.5rem;
+            right: 0;
+
+            @media (max-width: 991px) {
+                width: 9rem;
+                top: -2.5rem;
+            }
+        }
+
+        .fuel {
+            right: 0.9rem;
+            bottom: 0;
+
+            @media (max-width: 991px) {
+                width: 6rem;
+            }
+        }
+
+        .box_in {
+            width: 100%;
+
+            >div {
+                background-color: var(--cardbg);
+                padding: 3rem;
+                border-radius: 1.2rem;
+                border: 1px solid var(--cardborder);
+
+                @media (max-width: 1499px) {
+                    padding: 2.4rem;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+
+                button {
+                    width: 11rem;
+                    height: 4rem;
+                }
+
+                &.profile_details {
+                    display: flex;
+                    align-items: center;
+
+                    @media (max-width: 575px) {
+                        flex-wrap: wrap;
+
+                        >div {
+                            width: 100%;
+                            order: 1;
+                            margin-top: 1rem;
+                        }
+                    }
+
+                    >img {
+                        width: 9.6rem;
+                        height: 9.6rem;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                        margin-right: 1.7rem;
+
+                        @media (max-width: 1499px) {
+                            width: 7rem;
+                            height: 7rem;
+                            margin-right: 0.8rem;
+                        }
+                    }
+
+                    h2 {
+                        font-weight: 500;
+                        font-size: 3rem;
+                        margin-bottom: 1rem;
+
+                        @media (max-width: 1499px) {
+                            font-size: 2.4rem;
+                            margin-bottom: 0.4rem;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        color: var(--secondarytxt);
+
+                        @media (max-width: 1499px) {
+                            font-size: 1.4rem;
+                        }
+
+                        span {
+                            font-weight: 600;
+                        }
+
+                        &:not(:last-of-type) {
+                            margin-bottom: 1.4rem;
+
+                            @media (max-width: 1499px) {
+                                margin-bottom: 0.8rem;
+                            }
+
+                        }
+                    }
+                }
+
+                &.password {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+
+                    @media (max-width: 575px) {
+                        flex-wrap: wrap;
+
+                        .change_password_div {
+                            width: 100%;
+                            order: 1;
+                            margin-top: 1rem;
+                        }
+                    }
+
+                    .password_icon {
+                        background: var(--basegradient);
+                        width: 5rem;
+                        height: 5rem;
+                        border-radius: 1.2rem;
+                        display: flex;
+                        align-items: center;
+                        flex-shrink: 0;
+                        justify-content: center;
+
+                        @media (max-width: 1499px) {
+                            width: 4.4rem;
+                            height: 4.4rem;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        color: var(--secondarytxt);
+
+                        @media (max-width: 1499px) {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    p {
+                        color: var(--secondarylighttxt);
+                        font-size: 1.4rem;
+                        font-weight: 400;
+
+                        @media (max-width: 1499px) {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

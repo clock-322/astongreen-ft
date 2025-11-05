@@ -23,6 +23,7 @@ const Header = ({ show, setShow }) => {
         [ROUTES.TOKEN_MANAGEMENT]: "Token Management",
         [ROUTES.TOKEN_DETAILS]: "Token Management",
         [ROUTES.CREATE_TOKEN]: "Token Management",
+        [ROUTES.PROFILE]: "Profile",
     }
     return (
         <header className="header">
