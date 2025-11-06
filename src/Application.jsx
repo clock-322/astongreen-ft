@@ -1,9 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AuthLayout from './components/layouts/AuthLayout/AuthLayout'
 import OnboardLayout from './components/layouts/OnboardLayout/OnboardLayout'
-import AddProject from './components/pages/AddProject/AddProject'
+import AddPDD from './components/pages/AddPDD/AddPDD'
 import AddUser from './components/pages/AddUser/AddUser'
+import CompanyDetails from './components/pages/CompanyDetails/CompanyDetails'
+import CompanyRegisteration from './components/pages/CompanyRegisteration/CompanyRegisteration'
 import ConnectWallet from './components/pages/ConnectWallet/ConnectWallet'
+import CreateCompany from './components/pages/CreateCompany/CreateCompany'
 import CreateToken from './components/pages/CreateToken/CreateToken'
 import Dashboard from './components/pages/Dashboard/Dashboard'
 import EditUserDetails from './components/pages/EditUserDetails/EditUserDetails'
@@ -11,6 +14,8 @@ import Login from './components/pages/Login/Login'
 import PDDDetails from './components/pages/PDDDetails/PDDDetails'
 import PDDManagement from './components/pages/PDDManagement/PDDManagement'
 import Profile from './components/pages/Profile/Profile'
+import ProjectDetails from './components/pages/ProjectDetails/ProjectDetails'
+import ProjectManagement from './components/pages/ProjectManagement/ProjectManagement'
 import RoleManagement from './components/pages/RoleManagement/RoleManagement'
 import TokenDetails from './components/pages/TokenDetails/TokenDetails'
 import TokenManagment from './components/pages/TokenManagment/TokenManagment'
@@ -32,7 +37,7 @@ const Application = () => {
 
                     <Route path={ROUTES.PDD_MANAGEMENT} element={<PDDManagement />} />
                     <Route path={ROUTES.PDD_DETAILS} element={<PDDDetails />} />
-                    <Route path={ROUTES.ADD_PROJECT} element={<AddProject />} />
+                    <Route path={ROUTES.ADD_PDD} element={<AddPDD />} />
 
                     <Route path={ROUTES.USER_MANAGEMENT} element={<UserManagement />} />
                     <Route path={ROUTES.USER_DETAILS} element={<UserDetails />} />
@@ -44,6 +49,13 @@ const Application = () => {
                     <Route path={ROUTES.CREATE_TOKEN} element={<CreateToken />} />
 
                     <Route path={ROUTES.PROFILE} element={<Profile />} />
+
+                    <Route path={ROUTES.PROJECT_MANAGEMENT} element={<ProjectManagement />} />
+                    <Route path={ROUTES.PROJECT_DETAILS} element={<ProjectDetails />} />
+
+                    <Route path={ROUTES.COMPANIES} element={<CompanyRegisteration />} />
+                    <Route path={ROUTES.COMPANY_DETAILS} element={<CompanyDetails />} />
+                    <Route path={ROUTES.CREATE_COMPANY} element={<CreateCompany />} />
                 </Route>
             </Routes>
         </BrowserRouter>

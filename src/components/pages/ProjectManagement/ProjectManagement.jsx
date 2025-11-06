@@ -7,13 +7,13 @@ import Pagination from "../../common/Pagination/Pagination";
 import Table from '../../common/Table/Table';
 import Input from "../../common/form/Input/Input";
 import Select from "../../common/form/Select/Select";
-import "./TokenManagment.scss";
+import "./ProjectManagement.scss";
 
 const countryoptions = [
 ]
 
 
-const TokenManagment = () => {
+const ProjectManagement = () => {
     const navigate = useNavigate();
     const [page, setPage] = useState(1);
 
@@ -64,7 +64,7 @@ const TokenManagment = () => {
     ]
 
     return (
-        <div className="token_management">
+        <div className="project_management">
             <div className="filters">
                 <Input leftIcon={<SearchIcon />} placeholder="Search" />
                 <Select options={countryoptions} placeholder="Country" />
@@ -80,7 +80,7 @@ const TokenManagment = () => {
                             <td>{item.number}</td>
                             <td>
                                 <div className="action">
-                                    <Button onClick={() => navigate(ROUTES.TOKEN_DETAILS)} className="bordered_btn">View More</Button>
+                                    <Button onClick={() => navigate(ROUTES.PROJECT_DETAILS)} className="bordered_btn">View Projects</Button>
                                 </div>
                             </td>
                         </tr>
@@ -96,4 +96,4 @@ const TokenManagment = () => {
     )
 }
 
-export default TokenManagment
+export default ProjectManagement

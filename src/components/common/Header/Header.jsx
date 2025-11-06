@@ -15,7 +15,7 @@ const Header = ({ show, setShow }) => {
         [ROUTES.ROLE_MANAGEMENT]: "Role Management",
         [ROUTES.PDD_MANAGEMENT]: "PDD Management",
         [ROUTES.PDD_DETAILS]: "PDD Management",
-        [ROUTES.ADD_PROJECT]: "Create Project",
+        [ROUTES.ADD_PDD]: "PDD Management",
         [ROUTES.USER_MANAGEMENT]: "User Management",
         [ROUTES.USER_DETAILS]: "User Details",
         [ROUTES.ADD_USER]: "Create User",
@@ -24,6 +24,11 @@ const Header = ({ show, setShow }) => {
         [ROUTES.TOKEN_DETAILS]: "Token Management",
         [ROUTES.CREATE_TOKEN]: "Token Management",
         [ROUTES.PROFILE]: "Profile",
+        [ROUTES.PROJECT_MANAGEMENT]: "Project Management",
+        [ROUTES.PROJECT_DETAILS]: "Project Management",
+        [ROUTES.COMPANIES]: "Company Registration",
+        [ROUTES.CREATE_COMPANY]: "Company Registration",
+        [ROUTES.COMPANY_DETAILS]: "Company Registration",
     }
     return (
         <header className="header">

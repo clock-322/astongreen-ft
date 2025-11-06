@@ -4,7 +4,7 @@ import Breadcrumbs from "../../common/Breadcrumbs/Breadcrumbs";
 import Button from "../../common/Button/Button";
 import Input from "../../common/form/Input/Input";
 import Select from "../../common/form/Select/Select";
-import "./AddProject.scss";
+import "./AddPDD.scss";
 import ProjectConfirmation from "../../common/modals/ProjectConfirmation/ProjectConfirmation";
 
 const projectTypeOptions = [
@@ -12,7 +12,7 @@ const projectTypeOptions = [
     { value: "wind", label: "Wind", },
     { value: "hybrid", label: "Hybrid", },
 ]
-const AddProject = () => {
+const AddPDD = () => {
     const [show, setShow] = useState(false);
     const handleSubmit = event => {
         event.preventDefault();
@@ -20,8 +20,8 @@ const AddProject = () => {
         setShow(true);
     }
     return (
-        <div className="add_project">
-            <Breadcrumbs routes={[{ name: "PDD Management", route: ROUTES.PDD_MANAGEMENT, }, { name: "Create PDD ", route: ROUTES.ADD_PROJECT }]} />
+        <div className="add_pdd">
+            <Breadcrumbs routes={[{ name: "PDD Management", route: ROUTES.PDD_MANAGEMENT, }, { name: "Create PDD ", route: ROUTES.ADD_PDD }]} />
             <div className="project_card">
                 <form onSubmit={handleSubmit}>
                     <h2>Create Project</h2>
@@ -45,4 +45,4 @@ const AddProject = () => {
     )
 }
 
-export default AddProject
+export default AddPDD

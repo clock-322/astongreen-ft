@@ -15,8 +15,8 @@ const Sidebar = ({ show, setShow }) => {
     const routes = [
         { name: "Dashboard", icon: <DashboardIcon />, to: ROUTES.DASHBOARD, },
         { name: "PDD Management", icon: <PDDIcon />, to: ROUTES.PDD_MANAGEMENT, },
-        { name: "Company Registration", icon: <CompanyRegisterationIcon />, to: "", },
-        { name: "Project Management", icon: <ProjectManagementIcon />, to: "", },
+        { name: "Company Registration", icon: <CompanyRegisterationIcon />, to: ROUTES.COMPANIES, },
+        { name: "Project Management", icon: <ProjectManagementIcon />, to: ROUTES.PROJECT_MANAGEMENT, },
         { name: "Token Management", icon: <TokenManagementIcon />, to: ROUTES.TOKEN_MANAGEMENT, },
         { name: "User Management", icon: <UserMangementIcon />, to: ROUTES.USER_MANAGEMENT, },
         { name: "Role Management", icon: <RoleManagementIcon />, to: ROUTES.ROLE_MANAGEMENT, },

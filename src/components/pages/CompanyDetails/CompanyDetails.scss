@@ -1,0 +1,67 @@
+.company_details {
+    .details_card {
+        background-color: var(--secondarycardbg);
+        border-radius: 2rem;
+        border: 1px solid var(--secondarycardborder);
+        padding: 3rem;
+
+        @media (max-width: 1499px) {
+            padding: 2.4rem;
+        }
+
+        @media (max-width: 991px) {
+            padding: 1.6rem;
+            border-radius: 1.6rem;
+        }
+
+        .row {
+            margin: -0.5rem;
+
+            >div {
+                padding: 0.5rem;
+
+                @media (min-width: 1400px) {
+                    &.col-md-3 {
+                        width: calc(100% / 5);
+                    }
+
+                    &.col-md-12 {
+                        width: calc(100% - (100% / 5));
+                    }
+                }
+            }
+        }
+
+        .detail_card {
+            background-color: var(--detailcardbg);
+            border-radius: 1.6rem;
+            padding: 2.4rem;
+            height: 100%;
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: var(--detailcardlighttxt);
+                margin-bottom: 0.4rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: var(--secondarytxt);
+                white-space: nowrap;
+                overflow: clip;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .action {
+            display: flex;
+            align-items: center;
+
+            button {
+                width: 15rem;
+            }
+        }
+    }
+}

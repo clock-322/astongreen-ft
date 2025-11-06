@@ -1,0 +1,53 @@
+.create_company {
+    .details_card {
+        border-radius: 2rem;
+        border: 1px solid var(--secondarycardborder);
+        padding: 3rem;
+
+        @media (max-width: 1499px) {
+            padding: 2.4rem;
+        }
+
+        @media (max-width: 991px) {
+            padding: 1.6rem;
+            border-radius: 1.6rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--secondarytxt);
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 1;
+
+            @media (max-width: 1499px) {
+                margin-bottom: 1.8rem;
+            }
+
+            @media (max-width: 991px) {
+                margin-bottom: 1.6rem;
+            }
+        }
+
+        .row {
+            margin: 0 -1rem;
+            row-gap: 2rem;
+
+            >div {
+                padding: 0 1rem;
+            }
+        }
+
+        .action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 12.8rem;
+
+            button {
+                width: 47.3rem;
+            }
+        }
+    }
+}

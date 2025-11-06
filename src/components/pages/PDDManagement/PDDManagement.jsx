@@ -92,7 +92,7 @@ const PDDManagement = () => {
                 <Select options={typeOptions} placeholder="Type" />
                 <DatePicker startDate={startDate} onChange={date => setStartDate(date)} />
                 <Input leftIcon={<SearchIcon />} placeholder="Search" />
-                <Button className="ms-auto" onClick={() => navigate(ROUTES.ADD_PROJECT)}>+Add Project</Button>
+                <Button className="ms-auto" onClick={() => navigate(ROUTES.ADD_PDD)}>+Add Project</Button>
             </div>
             <Table fields={fields}>
                 {

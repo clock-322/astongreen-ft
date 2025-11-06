@@ -7,13 +7,13 @@ import Pagination from "../../common/Pagination/Pagination";
 import Table from '../../common/Table/Table';
 import Input from "../../common/form/Input/Input";
 import Select from "../../common/form/Select/Select";
-import "./TokenManagment.scss";
+import "./CompanyRegisteration.scss";
 
 const countryoptions = [
 ]
 
 
-const TokenManagment = () => {
+const CompanyRegisteration = () => {
     const navigate = useNavigate();
     const [page, setPage] = useState(1);
 
@@ -64,10 +64,11 @@ const TokenManagment = () => {
     ]
 
     return (
-        <div className="token_management">
+        <div className="company_registeration">
             <div className="filters">
                 <Input leftIcon={<SearchIcon />} placeholder="Search" />
                 <Select options={countryoptions} placeholder="Country" />
+                <Button className="ms-auto" onClick={() => navigate(ROUTES.CREATE_COMPANY)}>Register New Company</Button>
             </div>
             <Table fields={fields}>
                 {
@@ -80,7 +81,7 @@ const TokenManagment = () => {
                             <td>{item.number}</td>
                             <td>
                                 <div className="action">
-                                    <Button onClick={() => navigate(ROUTES.TOKEN_DETAILS)} className="bordered_btn">View More</Button>
+                                    <Button onClick={() => navigate(ROUTES.COMPANY_DETAILS)} className="bordered_btn">View More</Button>
                                 </div>
                             </td>
                         </tr>
@@ -96,4 +97,4 @@ const TokenManagment = () => {
     )
 }
 
-export default TokenManagment
+export default CompanyRegisteration
