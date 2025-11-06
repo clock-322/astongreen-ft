@@ -4,6 +4,14 @@
         display: flex;
         align-items: flex-start;
 
+        @media (max-width: 1399px) {
+            margin: 3.2rem 0 3rem;
+        }
+
+        @media (max-width: 575px) {
+            margin: 2rem 0 1.6rem;
+        }
+
         .step {
             width: calc(100% / 5);
             text-align: center;
@@ -21,6 +29,14 @@
                     height: 2px;
                     z-index: -1;
                     background-color: var(--secondarylighttxt);
+
+                    @media (max-width: 1599px) {
+                        top: 2.2rem;
+                    }
+
+                    @media (max-width: 575px) {
+                        top: 1.8rem;
+                    }
                 }
             }
 
@@ -37,6 +53,18 @@
                 justify-content: center;
                 background-color: var(--stepsinactivebg);
                 color: var(--stepstxt);
+
+                @media (max-width: 1599px) {
+                    font-size: 1.8rem;
+                    width: 4.4rem;
+                    height: 4.4rem;
+                }
+
+                @media (max-width: 575px) {
+                    font-size: 1.6rem;
+                    width: 3.6rem;
+                    height: 3.6rem;
+                }
             }
 
             p {
@@ -44,6 +72,24 @@
                 font-size: 1.6rem;
                 font-weight: 500;
                 line-height: 2rem;
+
+                @media (max-width: 1599px) {
+                    font-size: 1.4rem;
+                }
+
+                @media (max-width: 1399px) {
+                    font-size: 1.2rem;
+                    padding: 0 2rem;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 1.1rem;
+                    line-height: 1.4;
+                }
+
+                @media (max-width: 575px) {
+                    display: none;
+                }
             }
 
             &.current,
@@ -71,6 +117,16 @@
             line-height: 100%;
             color: var(--secondarytxt);
             margin-bottom: 2rem;
+
+            @media (max-width: 1599px) {
+                font-size: 1.8rem;
+            }
+
+            @media (max-width: 1399px) {
+                margin-bottom: 1.2rem;
+                font-size: 1.6rem;
+            }
+
         }
 
         .steps_form {
@@ -78,6 +134,10 @@
             border-radius: 1.6rem;
             background-color: var(--secondarycardbg);
             border: 1px solid var(--secondarycardborder);
+
+            @media (max-width: 1399px) {
+                padding: 1.6rem;
+            }
 
             .row {
                 margin: -1rem;

@@ -39,6 +39,86 @@
             }
         }
 
+        .upload {
+            .upload_input {
+                width: 100%;
+                background-color: var(--inputbg);
+                color: var(--inputtxt);
+                border-radius: 1.6rem;
+                min-height: 10.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                font-size: 1.4rem;
+                font-weight: 400;
+
+                svg {
+                    margin-bottom: 0.8rem;
+                }
+
+                input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                }
+
+                &:enabled {
+                    &:focus {
+                        background-color: var(--inputfocusbg);
+                    }
+                }
+
+            }
+        }
+
+        .uploaded_files {
+            @media (min-width: 992px) {
+                margin-top: 2.4rem;
+            }
+
+            .uploaded_file {
+                background-color: var(--inputbg);
+                color: var(--inputtxt);
+                display: flex;
+                align-items: center;
+                padding: 0 2.4rem;
+                height: 5rem;
+                border-radius: 1.6rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 0.5rem;
+                }
+
+                svg {
+                    flex-shrink: 0;
+                }
+
+                p {
+                    margin-left: 1.1rem;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    padding: 0 0.4rem 0 0;
+
+                    @media (max-width: 1399px) {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                button {
+                    flex-shrink: 0;
+                    margin-left: auto;
+                }
+            }
+        }
+
         .action {
             display: flex;
             align-items: center;

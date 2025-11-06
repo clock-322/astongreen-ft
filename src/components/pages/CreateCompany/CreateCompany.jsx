@@ -7,9 +7,23 @@ import Input from "../../common/form/Input/Input";
 import SuccessModal from "../../common/modals/SuccessModal/SuccessModal";
 import "./CreateCompany.scss";
 import Select from "../../common/form/Select/Select";
+import Label from "../../common/form/Label/Label";
+import { CloudIcon, CrossIcon, FilesIcon } from "../../../assets/icons/icons";
+import { useNavigate } from "react-router-dom";
 
 const CreateCompany = () => {
+    const navigate = useNavigate();
     const [show, setShow] = useState(false);
+    const [files, setFiles] = useState([]);
+    const handleFileChange = (e) => {
+        const newFiles = Array.from(e.target.files);
+        setFiles((prev) => [...prev, ...newFiles]);
+    };
+
+    const handleRemoveFile = (index) => {
+        setFiles((prev) => prev.filter((_, i) => i !== index));
+    };
+
     return (
         <div className="create_company">
             <Breadcrumbs routes={[{ name: "Company Registration", route: ROUTES.COMPANIES, }, { name: "Register New Company", route: ROUTES.CREATE_COMPANY }]} />
@@ -41,6 +55,29 @@ const CreateCompany = () => {
                         <Col lg={4} md={6}>
                             <Input label="SPOC Number" defaultValue="+91 9876543210" />
                         </Col>
+                        <Col lg={4} md={12}>
+                            <div className="upload">
+                                <Label>Documents</Label>
+                                <label className="upload_input">
+                                    <input type="file" multiple onChange={handleFileChange} />
+                                    <CloudIcon />
+                                    Upload Doc
+                                </label>
+                            </div>
+                        </Col>
+                        {files.length > 0 && <Col lg={4} md={12}>
+                            <div className="uploaded_files">
+                                {files.map((file, index) => (
+                                    <div key={index} className="uploaded_file">
+                                        <FilesIcon />
+                                        <p>{file.name || "Legal Document"}</p>
+                                        <button type="button" onClick={() => handleRemoveFile(index)}>
+                                            <CrossIcon />
+                                        </button>
+                                    </div>
+                                ))}
+                            </div>
+                        </Col>}
                     </Row>
                     <div className="mt-4"></div>
                     <Row>
@@ -53,8 +90,8 @@ const CreateCompany = () => {
             <SuccessModal
                 show={show}
                 handleClose={() => setShow(false)}
-                txt="User added successfully."
-                handleDone={() => { setShow(false) }}
+                txt="Company created successfully."
+                handleDone={() => { setShow(false); navigate(ROUTES.COMPANIES) }}
             />
         </div>
     )
