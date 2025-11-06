@@ -1,8 +1,8 @@
 .custom_input {
     .input_in {
 
-        input,
-        textarea {
+        >input,
+        >textarea {
             height: 5rem;
             border: none;
             outline: none;
@@ -38,7 +38,7 @@
             }
         }
 
-        textarea {
+        >textarea {
             min-height: 8.8rem;
             padding-top: 1.6rem;
             resize: none;
@@ -47,7 +47,7 @@
         &.icon_input {
             position: relative;
 
-            input {
+            >input {
                 padding-right: 5rem;
             }
 
@@ -62,7 +62,7 @@
         &.left_icon_input {
             position: relative;
 
-            input {
+            >input {
                 padding-left: 5rem;
             }
 
@@ -78,8 +78,8 @@
     &.white_input {
         .input_in {
 
-            input,
-            textarea {
+            >input,
+            >textarea {
                 background-color: var(--whiteinputbg);
                 color: var(--whiteinputtxt);
 

@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AuthLayout from './components/layouts/AuthLayout/AuthLayout'
 import OnboardLayout from './components/layouts/OnboardLayout/OnboardLayout'
 import AddPDD from './components/pages/AddPDD/AddPDD'
+import AddProject from './components/pages/AddProject/AddProject'
 import AddUser from './components/pages/AddUser/AddUser'
 import CompanyDetails from './components/pages/CompanyDetails/CompanyDetails'
 import CompanyRegisteration from './components/pages/CompanyRegisteration/CompanyRegisteration'
@@ -15,6 +16,7 @@ import PDDDetails from './components/pages/PDDDetails/PDDDetails'
 import PDDManagement from './components/pages/PDDManagement/PDDManagement'
 import Profile from './components/pages/Profile/Profile'
 import ProjectDetails from './components/pages/ProjectDetails/ProjectDetails'
+import ProjectDetailsView from './components/pages/ProjectDetailsView/ProjectDetailsView'
 import ProjectManagement from './components/pages/ProjectManagement/ProjectManagement'
 import RoleManagement from './components/pages/RoleManagement/RoleManagement'
 import TokenDetails from './components/pages/TokenDetails/TokenDetails'
@@ -52,6 +54,8 @@ const Application = () => {
 
                     <Route path={ROUTES.PROJECT_MANAGEMENT} element={<ProjectManagement />} />
                     <Route path={ROUTES.PROJECT_DETAILS} element={<ProjectDetails />} />
+                    <Route path={ROUTES.PROJECT_DETAILS_VIEW} element={<ProjectDetailsView />} />
+                    <Route path={ROUTES.ADD_PROJECT} element={<AddProject />} />
 
                     <Route path={ROUTES.COMPANIES} element={<CompanyRegisteration />} />
                     <Route path={ROUTES.COMPANY_DETAILS} element={<CompanyDetails />} />

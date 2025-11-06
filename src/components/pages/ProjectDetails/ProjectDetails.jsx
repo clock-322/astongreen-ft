@@ -11,10 +11,6 @@ import Select from "../../common/form/Select/Select";
 import "./ProjectDetails.scss";
 import { clsx } from "../../../utils/utils";
 
-const countryoptions = [
-]
-
-
 const ProjectDetails = () => {
     const navigate = useNavigate();
     const [page, setPage] = useState(1);

@@ -149,4 +149,17 @@
             }
         }
     }
+
+    &.white_input {
+        input {
+            background-color: var(--whiteinputbg);
+            color: var(--whiteinputtxt);
+
+            &:enabled {
+                &:focus {
+                    background-color: var(--whiteinputbg);
+                }
+            }
+        }
+    }
 }

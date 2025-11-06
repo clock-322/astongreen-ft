@@ -6,8 +6,8 @@ const Breadcrumbs = ({ className, routes }) => {
     return (
         <div className={clsx("custom_breadcrumbs", className)}>
             {
-                routes.map(item => (
-                    <Link to={item.route}>
+                routes.map((item, index) => (
+                    <Link to={item.route} key={index}>
                         {item.name}
                     </Link>
                 ))
